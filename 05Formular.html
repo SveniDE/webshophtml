@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <p>Anrede:
+            <input type="radio" id="frau" name="anrede" value="Frau">
+            <label for="frau">Frau</lable>
+            <input type="radio" id="herr" name="anrede" value="Herr">
+            <label for="herr">Herr</lable>
+        </p>
+        <p>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Ihr Name" required>
+        </p>
+        <p>
+            <label for="email">E-Mail</label>
+            <input type="email" id="email" name="email" required>
+        </p>
+        <p>
+            <label for="passwort">Passwort</label>
+            <input type="password" id="passwort" name="passwort">
+        </p>
+        <p>
+            <label for="menge">Menge</label>
+            <input type="number" id="menge" name="menge" min="1" value="1"
+        </p>
+        <p>
+            <label for="betreff">Betreff</label>
+            <select id="betreff" name="betreff" >
+                <option>Frage zur VM.</option>
+                <option>Wann ist entlich wochenende?</option>
+                <option selected>sonstiges</option>
+            </select>
+        </p>
+        <p border="0">
+            <label for="nachicht">Nachicht</label>
+            <textarea id="nachicht" name="nachricht" rows="10" cols="40">
+
+            </textarea>
+        </p>
+        <p>
+            <input type="checkbox" id="datenschutz" name="datenschutz" required>
+            <label for="datenschutz">Ich habe die Datenschutzerklärung gelesen.</label>
+        </p>
+        <p>
+            <button type="submit">Absenden</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>

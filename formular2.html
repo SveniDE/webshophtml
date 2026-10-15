@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formular 2.0</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form {
+            width: 320px;
+            padding: 20px;
+            background-color: aliceblue;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input, select, textarea{
+            width: 100px;
+            padding: 6px;
+            border: 1px;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        input:focus, select:focus, textarea:focus{
+            outline: 2px solid blue;
+        }
+        button {
+            margin-top: 12;
+            padding: 8px 16px;        
+            background-color: blue;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+                }
+            button:hover{
+                background-color: green;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Kontaktformular</h1>
+
+    <form>
+        <label for="name" >Name</label>
+        <input type="text" id="name"   name="name">
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email">
+
+        <label for="betreff">betreff</label>
+        <select name="betreff" id="betreff">
+            <option>Wann</option>
+            <option>Wo</option>
+            <option>Wie</option>
+        </select>
+
+        <label for="nachicht">NAchicht</label>
+         <p>
+            <button type="submit">Absenden</button>
+            <button type="reset">Reset</button>
+        </p>
+    </form>
+</body>
+</html>
